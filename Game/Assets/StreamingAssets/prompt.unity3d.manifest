@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+CRC: 923079347
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 995dd5ac1a7c8340f94fe2c342629b74
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e66803707fc0ed61904a64b282dbb5c0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Examples/Builds/Prompt/PromptItem.prefab
+- Assets/Examples/Builds/Prompt/PromptPanel.prefab
+Dependencies:
+- E:/self/Jumper/Game/Assets/StreamingAssets/prompt_asset.unity3d
+- E:/self/Jumper/Game/Assets/StreamingAssets/shared_asset.unity3d

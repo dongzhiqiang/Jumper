@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2338185792
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 68ecdd93b1af067b4f36faaffc7fd12a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4d24bf54f46935ed9e6cf78ac481bb9d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Examples/Textures/Shared/ButtonClick.png
+- Assets/Examples/Textures/Shared/ButtonNormal.png
+- Assets/Examples/Textures/Shared/ButtonDisable.png
+- Assets/Examples/Textures/Shared/SmallBaseMap.png
+Dependencies: []
