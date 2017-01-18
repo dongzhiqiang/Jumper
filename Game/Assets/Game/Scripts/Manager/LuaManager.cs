@@ -79,7 +79,7 @@ public class LuaManager : Manager
         if (AppConst.DebugMode)
         {
             string rootPath = Application.dataPath;
-            lua.AddSearchPath(rootPath + "Game/Lua");
+            lua.AddSearchPath(rootPath + "/Game/Lua");
             lua.AddSearchPath(rootPath + "/ToLua/Lua");
         }
         else

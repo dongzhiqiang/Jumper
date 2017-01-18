@@ -146,7 +146,8 @@ public class Packager {
             string path = "Assets" + dirs[i].Replace(Application.dataPath, "");
             AddBuildMap(name, "*.bytes", path);
         }
-        AddBuildMap("lua/lua" + AppConst.ExtName, "*.bytes", "Assets/Game/" + AppConst.LuaTempDir);
+        UnityEngine.Debug.Log("临时目录根目录下的文件存为lua.unity3d.manifest文件");
+        AddBuildMap("lua/lua" + AppConst.ExtName, "*.bytes", "Assets/" + AppConst.LuaTempDir);
 
         //-------------------------------处理非Lua文件----------------------------------
         UnityEngine.Debug.Log("//9、处理非Lua文件");

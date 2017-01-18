@@ -53,7 +53,7 @@ function Game.OnInitOK()
         ctrl:Awake();
     end
        
-    logWarn('LuaFramework InitOK--->>>');
+    logWarn('Game InitOK--->>>');
 end
 
 --测试协同--
