@@ -34,3 +34,11 @@ end
 function UIMgr.CloseAll()
 	
 end
+
+function UIMgr.Destroy()
+	
+end
+
+function UIMgr.DestroyAll()
+	
+end

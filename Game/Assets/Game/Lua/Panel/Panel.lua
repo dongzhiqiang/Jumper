@@ -39,3 +39,7 @@ end
 function Panel.OnFresh()
 	
 end
+
+function Panel.OnDestroy()
+
+end
