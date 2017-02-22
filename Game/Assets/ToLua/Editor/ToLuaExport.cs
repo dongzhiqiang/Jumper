@@ -87,10 +87,10 @@ public static class ToLuaExport
     static HashSet<string> usingList = new HashSet<string>();
     static MetaOp op = MetaOp.None;    
     static StringBuilder sb = null;
-    static List<MethodInfo> methods = new List<MethodInfo>();
-    static Dictionary<string, int> nameCounter = new Dictionary<string, int>();
-    static FieldInfo[] fields = null;
-    static PropertyInfo[] props = null;    
+    public static List<MethodInfo> methods = new List<MethodInfo>();
+    public static Dictionary<string, int> nameCounter = new Dictionary<string, int>();
+    public static FieldInfo[] fields = null;
+    public static PropertyInfo[] props = null;    
     static List<PropertyInfo> propList = new List<PropertyInfo>();  //非静态属性
     static List<PropertyInfo> allProps = new List<PropertyInfo>();
     static EventInfo[] events = null;
@@ -352,7 +352,7 @@ public static class ToLuaExport
         SaveFile(dir + wrapClassName + "Wrap.cs");
     }
 
-    static void InitMethods()
+    public static void InitMethods()
     {
         bool flag = false;
 
@@ -473,7 +473,7 @@ public static class ToLuaExport
         methods = list;
     }
 
-    static void InitPropertyList()
+    public static void InitPropertyList()
     {
         props = type.GetProperties(BindingFlags.GetProperty | BindingFlags.SetProperty | BindingFlags.Instance | binding);
         propList.AddRange(type.GetProperties(BindingFlags.GetProperty | BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase));
@@ -584,7 +584,7 @@ public static class ToLuaExport
         }  
     }
 
-    static string GetMethodName(MethodInfo md)
+    public static string GetMethodName(MethodInfo md)
     {
         if (md.Name.StartsWith("op_"))
         {
@@ -1105,7 +1105,7 @@ public static class ToLuaExport
         sb.AppendLineEx("\t}");
     }
 
-    static void InitCtorList()
+    public static void InitCtorList()
     {
         if (isStaticClass || type.IsAbstract || typeof(MonoBehaviour).IsAssignableFrom(type))
         {
