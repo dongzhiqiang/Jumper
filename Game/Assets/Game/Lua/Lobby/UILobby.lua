@@ -1,26 +1,29 @@
 -- UILobby.lua
 -- Author : Dzq
 -- Date : 2017-02-22
--- Last modification : 2017-02-22
+-- Last modification : 2017-02-23
 -- Desc: 大厅
 
 module(...,package.seeall)
 
 local item ={} 
-item.value = UnityEngine.UI.Text
-item.receive= UnityEngine.GameObject
-item.light= UnityEngine.GameObject
-item.icon= UnityEngine.UI.Image
-item.btn= UnityEngine.UI.Button 
+item.Top = UnityEngine.GameObject
+item.Center = UnityEngine.GameObject
+item.Bottom = UnityEngine.GameObject
+item.name = TextEx
+item.gold = TextEx
+item.icon = ImageEx
+item.btnCreate = StateHandle
+item.btnEnter = StateHandle
+item.btnSetting = StateHandle
+
 local itemDefine = util.Clone(item)
 
 util.GetMonoTable(activeGroup:Get(1),itemDefine,item) --activeGroup 是UIGroup
 
-item.value.text = tostring(cfg.activenessRequire)
-UI.UIHelper.SetSprite(item.icon,iconName) 
-
-function Init()
-	
+function Init()	
+	item.name.text = tostring("testName")
+	item.icon.Set("sprinte1")
 end
 
 function Open()

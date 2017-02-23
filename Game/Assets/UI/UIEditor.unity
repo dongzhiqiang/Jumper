@@ -252,6 +252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a73b2b6b0a463468886068b95d08eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_debugOrderTop: 0
+  m_debugOrderTopPanel: 
+  m_debugTopPanel: 
 --- !u!4 &405501070
 Transform:
   m_ObjectHideFlags: 0
